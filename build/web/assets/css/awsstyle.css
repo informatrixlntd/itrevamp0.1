@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Jun, 2025, 1:52:59 PM
+    Author     : prohit.bagde /assets/img/awspage/AWSBG.png
+*/
+
+.hero-section {
+  background: url("../img/awspage/AWSBG.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.hero-content {
+  max-width: 650px;
+}
+.btn-outline-light {
+  border-width: 2px;
+}
+
+.custom-card {
+  background-color: rgba(
+    60,
+    60,
+    60,
+    0.9
+  ); /* Semi-transparent dark background */
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.custom-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(60, 60, 60, 0.95);
+}
+.custom-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.custom-cardnew {
+  background-color: #ffffff;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  position: relative;
+}
+
+.custom-cardnew:hover {
+  box-shadow: 0 0 25px 5px rgba(144, 64, 255, 0.3),
+    0 0 25px 10px rgba(0, 196, 255, 0.2);
+  cursor: pointer;
+}
+
+.testimonial-section {
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+
+
+

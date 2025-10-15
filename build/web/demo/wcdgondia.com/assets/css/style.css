@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-dropdown-{
+    z-index: 10000 !important;
+}
+
+/* Style the sub-dropdown content */
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #aa2323;
+    min-width: 160px;
+    z-index: 100000 !important;
+}
+
+.sub-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize !important;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+/* Show the sub-dropdown content when hovering over the sub-dropdown button */
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+
+
+.main_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* common-css */
+
+
+
+.swing {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1000;
+}
+
+.swing_img {
+    width: 100%;
+}
+
+.swing_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.swing_info>h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.swing_info>p {
+    line-height: 1.8em;
+}
+
+.condition {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.condition>h1 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.condition>button {
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 15px;
+    background-color: #aa2323;
+    border: none;
+    color: whitesmoke;
+}
+
+.condition>button>a {
+    color: whitesmoke;
+}
+
+
+/* reg-form-css */
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center !important;
+    border: 2px solid black;
+    width: 70%;
+    margin-left: 190px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.reg_form input[type="text"] {
+    padding: 5px 30px;
+    font-size: 18px;
+
+}
+
+.reg_form label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.name {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.adhar {
+    display: flex;
+    column-gap: 10px;
+
+
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.bank_name {
+    display: flex;
+    column-gap: 95px;
+    justify-content: center;
+
+}
+
+.bank_ac_no {
+    display: flex;
+    column-gap: 45px;
+}
+
+.bank_ifsc_no {
+    display: flex;
+    column-gap: 55px;
+    align-items: flex-start !important;
+}
+
+.address {
+    display: flex;
+    column-gap: 40px;
+    padding: 10px;
+}
+
+
+.father_name {
+    display: flex;
+    column-gap: 40px;
+}
+
+.cast {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.income {
+    display: flex;
+    column-gap: 60px;
+}
+
+.under_poverty {
+    display: flex;
+    column-gap: 60px;
+}
+
+.self_dec {
+    display: flex;
+    column-gap: 60px;
+}
+
+.edu_qualification {
+    display: flex;
+    column-gap: 60px;
+}
+
+.disable {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.traning {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #aa2323;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* login form -css */
+
+.form-container {
+    width: 100%;
+    /* height: 600px; */
+    /* background-color: yellow; */
+    display: flex;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+.login {
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.login>h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.signup {
+    border-left: 1px solid black;
+    width: 50%;
+    /* height: 100%; */
+    /* background-color: skyblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signup>h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.button {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    /* border: 2px solid; */
+    /* align-items: center; */
+    row-gap: 10px;
+
+}
+
+.form1>label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+input[type="text"] {
+    /* border: none; */
+    padding: 10px 30px;
+}
+
+input[type="password"] {
+    /* width: 300px; */
+    /* border: none; */
+    padding: 8px 35px !important;
+}
+
+input[type="email"] {
+    /* width: 300px; */
+    padding: 10px 30px;
+    /* border: none; */
+}
+
+
+
+
+
+/* contact-css */
+.address_form {
+    height: 500px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.address_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.address_info h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.address_info h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* registration-form */
+
+/* Center the container vertically and horizontally */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Adjust as needed */
+    background-color: #f0f0f0;
+    /* Optional background color */
+}
+
+/* Style your form */
+.centered-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Center text box and input fields */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.input-container input[type="file"] {
+    padding: 0;
+    border: none;
+    margin-top: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.raido_input {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .centered-form {
+        max-width: 90%;
+    }
+}
+
+
+
+
+.g-tranlate{
+    /* height: 40px; */
+    width: 160px;
+    overflow: hidden;
+    background-color: #d5d0c7;
+    /* position: fixed; */
+    top: 0;
+    right:420px;
+    cursor: pointer;
+    z-index: 100;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+.g-translater{
+    padding: 10px;
+    outline: none;
+}
+
+.g-translater select{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    width: 80px;
+    overflow-x: hidden;
+}

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="assets/images/favicon/favicon.png">
+    <title>Home | Ministry | Department | GoI</title>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/base.css" rel="stylesheet" media="all">
+    <link href="assets/css/base-responsive.css" rel="stylesheet" media="all">
+    <link href="assets/css/grid.css" rel="stylesheet" media="all">
+    <link href="assets/css/font.css" rel="stylesheet" media="all">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="assets/css/flexslider.css" rel="stylesheet" media="all">
+    <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+    <link href="assets/css/print.css" rel="stylesheet" media="print" />
+    <!-- Theme styles for this template -->
+    <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+    <link href="theme/css/site.css" rel="stylesheet" media="all">
+    <link href="theme/css/site-responsive.css" rel="stylesheet" media="all">
+    <link href="theme/css/ma5gallery.css" rel="stylesheet" type="text/css">
+    <link href="theme/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+      <![endif]-->
+    <!-- Custom JS for this template -->
+    <noscript>
+        <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
+    </noscript>
+
+
+    <style>
+        /* Style the sub-dropdown content */
+        .sub-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #aa2323;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .sub-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-transform: capitalize !important;
+        }
+
+        .sub-dropdown-content a:hover {
+            background-color: #f1f1f1;
+
+        }
+
+        /* Show the sub-dropdown content when hovering over the sub-dropdown button */
+        .sub-dropdown:hover .sub-dropdown-content {
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <header>
+        <div class="region region-header-top">
+            <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+                <noscript class="no_scr">"JzavaScript is a standard programming language that is included to provide
+                    interactive features, Kindly enable Javascript in your browser. For details visit help page"
+                </noscript>
+                <div class="wrapper common-wrapper">
+                    <div class="container common-container four_content top-header">
+                        <div class="common-left clearfix">
+                            <ul>
+                                <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank"
+                                            href="https://india.gov.in/hi"
+                                            title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)">महिला व
+                                            बालकल्याण समिती</a></span> </li>
+                                <li class="ministry"><span class="li_eng responsive_go_eng"><a target="_blank"
+                                            href="https://india.gov.in/"
+                                            title="Government of india,External Link that opens in a new window">WOMEN
+                                            AND CHILD WELFARE COMMITEE </a></span></li>
+                            </ul>
+                        </div>
+                        <div class="common-right clearfix">
+                            <ul id="header-nav">
+                                <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
+                                </li>
+                                <li class="ico-site-search cf">
+                                    <a href="javascript:void(0);" id="toggleSearch" title="Site Search">
+                                        <img class="top" src="assets/images/ico-site-search.png"
+                                            alt="Site Search" /></a>
+                                    <div class="search-drop both-search">
+                                        <div class="google-find">
+                                            <form method="get" action="http://www.google.com/search" target="_blank">
+                                                <label for="search_key_g" class="notdisplay">Search</label>
+                                                <input type="text" name="q" value="" id="search_key_g" />
+                                                <input type="submit" value="Search" class="submit" />
+                                                <div class="">
+                                                    <input type="radio" name="sitesearch" value="" id="the_web" />
+                                                    <label for="the_web">The Web</label>
+                                                    <input type="radio" name="sitesearch" value="india.gov.in" checked
+                                                        id="the_domain" /> <label for="the_domain"> INDIA.GOV.IN</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="find">
+                                            <form name="searchForm">
+                                                <label for="search_key" class="notdisplay">Search</label>
+                                                <input type="text" name="search_key" id="search_key"
+                                                    onKeyUp="autoComplete()" autocomplete="off" required />
+                                                <input type="submit" value="Search" class="bttn-search" />
+                                            </form>
+                                            <div id="auto_suggesion"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ico-accessibility cf">
+                                    <a href="javascript:void(0);" id="toggleAccessibility"
+                                        title="Accessibility Dropdown">
+                                        <img class="top" src="assets/images/ico-accessibility.png"
+                                            alt="Accessibility Dropdown" />
+                                    </a>
+                                    <ul style="visibility: hidden;">
+                                        <li> <a onClick="set_font_size(&#39;increase&#39;)" title="Increase font size"
+                                                href="javascript:void(0);">A<sup>+</sup>
+                                            </a>
+                                        </li>
+                                        <li> <a onClick="set_font_size()" title="Reset font size"
+                                                href="javascript:void(0);">A<sup>&nbsp;</sup></a> </li>
+                                        <li> <a onClick="set_font_size(&#39;decrease&#39;)" title="Decrease font size"
+                                                href="javascript:void(0);">A<sup>-</sup></a> </li>
+                                        <li> <a href="javascript:void(0);" class="high-contrast dark"
+                                                title="High Contrast">A</a> </li>
+                                        <li> <a href="javascript:void(0);" class="high-contrast light"
+                                                title="Normal Contrast" style="display: none;">A</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="ico-social cf">
+                                    <a href="javascript:void(0);" id="toggleSocial" title="Social Medias">
+                                        <img class="top" src="assets/images/ico-social.png" alt="Social Medias" /></a>
+                                    <ul>
+                                        <li><a target="_blank" title="External Link that opens in a new window"
+                                                href="http://www.facebook.com/"><img alt="Facebook Page"
+                                                    src="assets/images/ico-facebook.png"></a></li>
+                                        <li><a target="_blank" title="External Link that opens in a new window"
+                                                href="http://www.twitter.com/"><img alt="Twitter Page"
+                                                    src="assets/images/ico-twitter.png"></a></li>
+                                        <li><a target="_blank" title="External Link that opens in a new window"
+                                                href="http://www.youtube.com/"><img alt="youtube Page"
+                                                    src="assets/images/ico-youtube.png"></a></li>
+                                    </ul>
+                                </li>
+                                <li class="ico-sitemap cf"><a href="" title="Sitemap">
+                                        <img class="top" src="assets/images/ico-sitemap.png" alt="Sitemap" /></a>
+                                </li>
+                                <li class="hindi cmf_lan d-hide">
+                                    <label class="de-lag">
+                                        <span style="display: none;">Language</span>
+                                        <select title="Select Language">
+                                            <option>English</option>
+                                            <option>मराठी</option>
+                                        </select>
+                                    </label>
+                                </li>
+                                <li class="marathi cmf_lan m-hide">
+                                    <a href="javascript:;" title="Select Language">Language</a>
+                                    <ul>
+                                        <li><a target="_blank" href="" lang="marathi" class="alink"
+                                                title="Click here for मराठी version.">मराठी</a></li>
+                                    </ul>
+                                </li>
+                                <li class="ico-skip cf"><a href="./login.html" target="_blank" title="">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="scroll" style="display: none;"><span></span></p>
+        </div>
+        <!--Top-Header Section end-->
+        <section class="wrapper header-wrapper">
+            <div class="container common-container four_content  header-container">
+                <div class="header-center fix">
+                    <div class="center-content">
+                        <div class="float-element">
+                            <!-- <a class="sw-logo" target="_blank" href="https://swachhbharat.mygov.in/"
+                                title="Swachh Bharat, External link that open in a new windows"><img
+                                    src="assets/images/swach-bharat.png" alt="Swachh Bharat"></a> -->
+                        </div>
+                    </div>
+                </div>
+                <h2 class="logo">
+                    <div class="header-center fix">
+                        <div class="center-content clearfix">
+                            <a href="#" title="Home" rel="home" class="header__logo" id="logo">
+                                <img class="national_emblem" src="assets/images/emblem-dark.png"
+                                    alt="national emblem"><br>
+                                <em><span>WOMEN & CHILD DEVELOPMENT DEPARTMENT</span>
+                                    <span>ZILLA PARISHAD, GONDIA</span>
+                                </em>
+                            </a>
+                        </div>
+                    </div>
+                </h2>
+                <div class="header-right clearfix">
+                    <div class="right-content clearfix">
+                        <div class="float-element">
+                            <!-- <a class="sw-logo" target="_blank" href="https://swachhbharat.mygov.in/"
+                                title="Swachh Bharat, External link that open in a new windows"><img
+                                    src="assets/images/swach-bharat.png" alt="Swachh Bharat"></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/.header-wrapper-->
+        <section class="wrapper megamenu-wraper">
+            <h2 style="display: none;">Megamenu</h2>
+            <div class="container common-container four_content">
+                <p class="showhide"><em></em><em></em><em></em></p>
+                <nav class="main-menu clearfix" id="main_menu" style="">
+                    <ul class="nav-menu">
+                        <!-- <li class="nav-item"> <a href="#" class="home"><i class="fa fa-home"></i></a> </li>  -->
+                        <li class="nav-item"> <a href="#" class="home">Home</a> </li>
+                        <li class="nav-item"> <a href="#">About Us</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="#">STRUCTUTE OF WCD GONDIA </a></li>
+                                    <li><a href="mission.html">HEADOFFICE </a></li>
+                                    <!-- <li><a href="ors.html">PROJECT OFFICE</a> </li> -->
+
+                                    <li class="sub-dropdown">
+                                        <a class="sub-dropbtn">PROJECT OFFICE</a>
+                                        <div class="sub-dropdown-content">
+                                            <a href="#">AMGAON</a>
+                                            <a href="#">GOREGAON</a>
+                                            <a href="#">GONDIA - 1</a>
+                                            <a href="#">GONDIA - 2</a>
+                                            <a href="#">SALEKASA</a>
+                                            <a href="#">SADAK ARJUNI</a>
+                                            <a href="#">TIRODA</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="sub-dropdown">
+                                        <a class="sub-dropbtn">COMMITTEE</a>
+                                        <div class="sub-dropdown-content">
+                                            <a href="#">WOMEN AND CHILD WELFARE COMMITEE</a>
+                                            <a href="#">CONVERSION ACTION PLAN COMMITEE</a>
+                                            <a href="#">DISTRICT PURCHASING COMMITEE</a>
+                                            <a href="#">DISTRICT TRANING COMMITEE</a>
+                                            <a href="#">WOMEN GRAVIENCE COMMITEE</a>
+                                            <a href="#">MISSION VATSALYA COMMITEE</a>
+                                        </div>
+                                    </li>
+                                    <!-- <li><a href="adcon.html">Agencies under Administrative Control</a></li> -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- <li class="nav-item"> <a href="inner.html">  Commitee </a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Women And Child Welfare Commitee</a></li>
+                          <li><a href="inner.html">Conversion Action Plan Commitee</a></li>
+                          <li><a href="inner.html">District Purchasing Commitee</a></li>
+                          <li><a href="inner.html">Women Gravience Commitee</a></li>
+                          <li><a href="inner.html">Mission Vatsalya Commitee</a></li>
+                        </ul>
+                      </div>
+                    </li> -->
+
+                        <li class="nav-item"> <a href="inner.html"> Dashboard </a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="#">WCD ZP SCHEME</a></li>
+                                    <li><a href="https://www.poshantracker.in/"  target="_blank">Poshan Tracker</a></li>
+                                    <li><a href="#">Tarang Suposhit Maharastra</a></li>
+                                    <li><a href="#">Jan Andolan Dashboard</a></li>
+                                    <li><a href="#">Maharashtra Traking System (Maha. MTS)</a></li>
+                                    <!-- <li><a href="inner.html">Poshan Calculator</a></li> -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item"> <a href="inner.html"> Scheme &amp; Guidline </a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li class="sub-dropdown">
+                                        <a class="sub-dropbtn">SCP</a>
+                                        <div class="sub-dropdown-content">
+                                            <a href="./sewing_mech.html">SEWING MACHINE</a>
+                                            <a href="flour_mill.html">PULVISER MACHINE</a>
+                                            <a href="#">SOLAR KANDIL</a>
+                                            <a href="#">POLICE BHARTI PRE TRANING</a>
+                                            <a href="#">FOOD PROCCESING TRANING</a>
+                                            <a href="./typing.html">ENG / MARATHI TYPING COURSE</a>
+                                            <a href="./computer.html">MSCIT COMPUTER TRANING</a>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="sub-dropdown">
+                                        <a class="sub-dropbtn">TSP</a>
+                                        <div class="sub-dropdown-content">
+                                            <a href="./sewing_mech.html">SEWING MACHINE</a>
+                                            <a href="flour_mill.html">PULVISER MACHINE</a>
+                                            <a href="#">SOLAR KANDIL</a>
+                                            <a href="#">POLICE BHARTI PRE TRANING</a>
+                                            <a href="#">FOOD PROCCESING TRANING</a>
+                                            <a href="./typing.html">ENG / MARATHI TYPING COURSE</a>
+                                            <a href="./computer.html">MSCIT COMPUTER TRANING</a>
+                                        </div>
+                                    </li>
+                                    <li class="sub-dropdown">
+                                        <a class="sub-dropbtn">OTSP</a>
+                                        <div class="sub-dropdown-content">
+                                            <a href="./sewing_mech.html">SEWING MACHINE</a>
+                                            <a href="flour_mill.html">PULVISER MACHINE</a>
+                                            <a href="#">SOLAR KANDIL</a>
+                                            <a href="#">POLICE BHARTI PRE TRANING</a>
+                                            <a href="#">FOOD PROCCESING TRANING</a>
+                                            <a href="./typing.html">ENG / MARATHI TYPING COURSE</a>
+                                            <a href="./computer.html">MSCIT COMPUTER TRANING</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Amrut Ahar Yojana (APJ )</a></li>
+                                    <li><a href="#">Beti Bachao Beti Padhao (BBBP)</a></li>
+                                    <!-- <li><a href="inner.html">Majhi Kanya Bhagyashri Yojna</a></li>   -->
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item"> <a href="https://www.poshantracker.in/PTCalculator"  target="_blank"> Poshan Calculator </a> </li>
+
+                        <li class="nav-item"> <a href="#">Notification</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="#">Official </a></li>
+                                    <li><a href="#">Tender </a></li>
+                                    <li><a href="#">IEC</a></li>
+                                    <li><a href="#">Recruitment</a></li>
+                                    <li><a href="#">Invitation Of Application (IOA)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item"> <a href="#"> Achivement & Gallary</a> </li>
+
+                        <!-- <li class="nav-item"> <a href="inner.html">  Apply for Scheme </a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Sewing Machine</a></li>
+                          <li><a href="inner.html">Pulvriser Machine (Aata Chakki)</a></li>
+                          <li><a href="inner.html">Solar Light(Sour Kandil)</a></li>
+                          <li><a href="inner.html">Police Bharti Pre Traning Course</a></li>
+                          <li><a href="inner.html">Food proccessing Traning</a></li>
+                          <li><a href="inner.html">English / marathi Typing Course</a></li>
+                          <li><a href="inner.html">MSCIT / CCC Computer Course</a></li>
+                          <li><a href="inner.html">Life Skill Traning</a></li>
+                          <li><a href="inner.html">Personality Development Course</a></li>  
+                        </ul>
+                      </div>
+                    </li> -->
+
+                        <!-- <li class="nav-item"> <a href="inner.html">  Notices </a>
+                      <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                          <li><a href="inner.html">Announcements</a></li>
+                          <li><a href="inner.html">Recruitments</a></li>
+                          <li><a href="inner.html">Circulars</a></li>
+                          <li><a href="inner.html">Events</a></li>
+                        </ul>
+                      </div>
+                    </li> -->
+
+                        <!-- <li class="nav-item"><a href="inner.html"> Media</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="inner.html">What’s New</a></li>
+                                    <li><a href="inner.html">Awards</a></li>
+                                    <li><a href="inner.html">Photo Gallery</a></li>
+                                    <li><a href="inner.html">Video Gallery</a></li>
+                                    <li><a href="inner.html">Press Release</a></li>
+                                    <li><a href="inner.html">Speeches</a></li>
+                                    <li><a href="inner.html">E-Book</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+
+                        <!-- <li class="nav-item"><a>Acts & Rules</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="inner.html">Right to Information Act</a></li>
+                                    <li><a href="inner.html">Other Act And Rules</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+
+                        <!-- <li class="nav-item"><a>Tenders</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="inner.html">Recent Tenders</a></li>
+                                    <li><a href="inner.html">Awarded Tenders</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+
+                        <li class="nav-item"><a href="./login.html">Login/Register</a></li>
+
+                        <!-- <li class="nav-item"><a href="inner.html">Important Links</a></li> -->
+
+                        <!-- <li class="nav-item"><a href="inner.html">Contact Us</a></li> -->
+                        <li class="nav-item"><a>Contact Us</a>
+                            <div class="sub-nav">
+                                <ul class="sub-nav-group">
+                                    <li><a href="./contact.html">ZP GONDIA MAP</a></li>
+                                    <!-- <li><a href="./contact.html">Awarded Tenders</a></li> -->
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+                <nav class="main-menu clearfix" id="overflow_menu">
+                    <ul class="nav-menu clearfix">
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!--/.nav-wrapper-->
+    <section class="wrapper banner-wrapper">
+        <h1 style="display: none">Banner</h1>
+        <div id="flexSlider" class="flexslider">
+            <ul class="slides">
+                <li><img src="./assets/images/slider/slider-5.jpg" alt="home page slider1" title="Image 1 description">
+                </li>
+                <li><img src="./assets/images/slider/slider-2.jpg" alt="home page slider2" title="Image 2 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider6.png" alt="home page slider3" title="Image 3 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider7.jpg" alt="home page slide4" title="Image 4 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider8.png" alt="home page slider5" title="Image 5 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider1.jpg" alt="home page slider6" title="Image 6 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider-3.jpeg" alt="home page slider7" title="Image 7 description">
+                </li>
+                <li> <img src="./assets/images/slider/slider-4.jpg" alt="home page slider8" title="Image 8 description">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <h2 style="display: none;">Body</h2>
+        <div class="bg-wrapper top-bg-wrapper gray-bg padding-top-bott">
+            <div class="container common-container four_content body-container top-body-container padding-top-bott2">
+                <div class="minister clearfix">
+                    <div class="minister-box clearfix">
+                        <div class="minister-sub1">
+                            <div class="minister-image"><img src="./assets/images/slider/pass_1.jpg"
+                                    alt="Hon’ble Minister" title="Ministry/Department, Minister Name"></div>
+                            <div class="min-info">
+                                <h4><a href="#" title="Minister Name">Smt. Savita Sanjay Puram</a></h4>
+                                <h5 class="prime"><a href="#" title="Hon’ble Prime Minister">Sabhapati</a></h5>
+                                <a href="#" title="External link open in new tab,Portfolio of Hon’ble minister"
+                                    target="_blank" class="portgolio-button">
+                                    View Portfolio <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="minister-sub">
+                            <div class="minister-image"><img src="./assets/images/slider/pass_3.jpeg" alt="Hon’ble Minister"
+                                    title="Ministry/Department,Minister Name"></div>
+                            <div class="min-info">
+                                <h4>Minister Name</h4>
+                                <h5><a href="#" title="Minister of Coal"><span>Ministry/Department</span> Name</a></h5>
+                            </div>
+                        </div>
+                        <div class="minister-sub">
+                            <div class="minister-image"><img src="./assets/images/slider/pass_2.jpg"
+                                    alt="minister of state coal and mines" title="Ministry/Department, Minister Name">
+                            </div>
+                            <div class="min-info">
+                                <h4>Minister Name</h4>
+                                <h5><a href="#" title="Minister of State"><span>Ministry/Department</span>
+                                        NAme</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-block">
+                    <div class="left-col-2">
+                        <div class="page-tab clearfix">
+                            <div class="page-tab-res clearfix">
+                                <div id="parentHorizontalTab">
+                                    <ul class="resp-tabs-list hor_1">
+                                        <li><a href="#" id="tab-list-1"> Whats's New</a></li>
+                                        <li><a href="#">Press Release</a></li>
+                                    </ul>
+                                    <div class="resp-tabs-container hor_1">
+                                        <div class="clearfix" id="hor_1_tab_item-0">
+                                            <div class="content-wrapper">
+                                                <p class="text-slide pause" onclick="changeClass()"></p>
+                                                <div class="scroll-text scroll-left">
+                                                    <ul class="list">
+                                                        <li>
+                                                            <div class="list-content">Description of Whats's New 1 goes
+                                                                here.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Whats's New 2 goes
+                                                                here.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Whats's New 3 goes
+                                                                here.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Whats's New 4 goes
+                                                                here.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="view-footer"><a href="/mpa/media/whats-new"
+                                                        title="Read More"><span>Read More ></span></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" id="hor_1_tab_item-1">
+                                            <div class="content-wrapper">
+                                                <p class="text-slide01 pause" onclick="changeClass01()"></p>
+                                                <div class="scroll-text01 scroll-left">
+                                                    <ul class="list">
+                                                        <li>
+                                                            <div class="list-content">Description of Press Release 1
+                                                                goes here mm-dd-yyyy. </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Press Release 2
+                                                                goes here mm-dd-yyyy.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Press Release 3
+                                                                goes here mm-dd-yyyy.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list-content">Description of Press Release 4
+                                                                goes here mm-dd-yyyy.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="view-footer"><a href="/mpa/media/whats-new"
+                                                        title="Read More"><span>Read More ></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-col-2">
+                        <h2>Tenders</h2>
+                        <p class="text-slide1 pause" onclick="changeClass1()"></p>
+                        <div class="scroll-text-1 scroll-left">
+                            <ul class="list">
+                                <li>
+                                    <div class="date"><span>24</span><em>07 1994</em></div>
+                                    <div class="list-content">Description of Tenders 1 goes here</div>
+                                </li>
+                                <li>
+                                    <div class="date"><span>DD</span><em>MM YYYY</em></div>
+                                    <div class="list-content">Description of Tenders 2 goes here</div>
+                                </li>
+                                <li>
+                                    <div class="date"><span>DD</span><em>MM YYYY</em></div>
+                                    <div class="list-content">Description of Tenders 3 goes here</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view-footer"><a href="/mpa/media/whats-new"
+                                title="Know More About Tenders"><span>View all Tenders ></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper home-banner">
+            <div class="container common-container four_content banner-container body-container top-body-container">
+                <div class="banner-content-wrapper">
+                    <h2>Welcome to <span>Ministry/Department</span></h2>
+                    <p class="banner-title-tag-line">Welcome to the website of Ministry/Department, Government of India.
+                    </p>
+                    <p class="banner-content"> An informative text section that outlines the work portfolio of the
+                        ministry and the initiatives/ schemes and other useful purpose that the ministry website serves.
+                        An informative text section that outlines the work portfolio of the ministry and the
+                        initiatives/ schemes and other useful purpose that the ministry website serves.
+                    </p>
+                    <a href="#" title="Click here to know more about">Read more ></a>
+                </div>
+                <div class="banner-right-wrapper">
+                    <div class="banner-box-wrapper">
+                        <div class="banner-box banner-box-1">
+                            <div class="banner-box-content">
+                                <h2>External Link 1</h2>
+                                <a href="#" title="External link that opens in new tab" target="_blank">
+                                    <p>Sub-heading</p>
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-box banner-box-2">
+                            <div class="banner-box-content">
+                                <h2>External Link 2</h2>
+                                <a href="#" title="External link that opens in new tab" target="_blank">
+                                    <p>Sub-heading</p>
+                                    <i class="fa fa-external-link"> </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper home-btm-slider">
+            <div class="container common-container four_content gallery-container">
+                <div class="gallery-area clearfix">
+                    <div class="gallery-heading">
+                        <h3>Photo Gallery</h3>
+                        <a class="bttn-more bttn-view" href="#" title="View all Photo Gallery"><span>View All</span></a>
+                    </div>
+                    <div class="gallery-holder">
+                        <div id="galleryCarousel" class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="./assets/images/slider/schem-3.png" data-thumb-alt="Slide 1">
+                                    <img src="./assets/images/slider/schem-3.png" alt="gallery2" title="Slide 1" />
+                                </li>
+                                <li data-thumb="./assets/images/slider/schem-1.png" data-thumb-alt="Slide 2">
+                                    <img src="./assets/images/slider/schem-1.png" alt="gallery1" title="Slide 2" />
+                                </li>
+                                <li data-thumb="./assets/images/slider/schem-4.png" data-thumb-alt="Slide 3">
+                                    <img src="./assets/images/slider/schem-4.png" alt="gallery3" title="Slide 3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-right">
+                    <div class="video-heading">
+                        <h3>Video Gallery</h3>
+                        <a class="bttn-more bttn-view" href="#" title="View all Video Gallery"><span>View All</span></a>
+                    </div>
+                    <div class="video-wrapper">
+                        <video src="#" poster="theme/images/"
+                            title="The Union Minister for Railways and Coal, Shri Piyush Goyal addressing a press conference on Neyveli Lignite Corporation.">
+                            <span>Your browser does not support HTML5 video.</span>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.body-wrapper-->
+    <!--/.banner-wrapper-->
+    <section class="wrapper carousel-wrapper">
+        <h2 style="display: none;">Carousel</h2>
+        <div class="container common-container four_content carousel-container">
+            <div id="flexCarousel" class="flexslider carousel">
+                <ul class="slides">
+                    <li><a target="_blank" href="http://digitalindia.gov.in/"
+                            title="Digital India, External Link that opens in a new window"><img
+                                src="assets/images/carousel/digital-india.png" alt="Digital India"></a></li>
+                    <li><a target="_blank" href="http://www.makeinindia.com/"
+                            title="Make In India, External Link that opens in a new window"> <img
+                                src="assets/images/carousel/makeinindia.png" alt="Make In India"></a></li>
+                    <li><a target="_blank" href="http://india.gov.in/"
+                            title="National Portal of India, External Link that opens in a new window"><img
+                                src="assets/images/carousel/india-gov.png" alt="National Portal of India"></a></li>
+                    <li><a target="_blank" href="http://goidirectory.nic.in/"
+                            title="GOI Web Directory, External Link that opens in a new window"><img
+                                src="assets/images/carousel/goidirectory.png" alt="GOI Web Directory"></a></li>
+                    <li><a target="_blank" href="https://data.gov.in/"
+                            title="Data portal, External Link that opens in a new window"><img
+                                src="assets/images/carousel/data-gov.png" alt="Data portal"></a></li>
+                    <li><a target="_blank" href="https://mygov.in/"
+                            title="MyGov, External Link that opens in a new window"><img
+                                src="assets/images/carousel/mygov.png" alt="MyGov Portal"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--/.carousel-wrapper-->
+    <footer class="wrapper footer-wrapper">
+        <div class="footer-top-wrapper">
+            <div class="container common-container four_content footer-top-container">
+                <ul>
+                    <li><a href="inner.html">Website Policies</a></li>
+                    <li><a href="inner.html">Help</a></li>
+                    <li><a href="inner.html">Contact Us</a></li>
+                    <li><a href="inner.html">Terms and Conditions </a></li>
+                    <li><a href="inner.html">Feedback</a></li>
+                    <li><a href="inner.html">Web Information Manager</a></li>
+                    <li><a href="inner.html">Visitor Analytics</a></li>
+                    <li><a href="inner.html">FAQ</a></li>
+                    <li><a href="inner.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-wrapper">
+            <div class="container common-container four_content footer-bottom-container">
+                <div class="footer-content clearfix">
+                    <div class="copyright-content"> Website Content Managed by <strong>Department Name, Ministry Name,
+                        </strong> <span>Designed, Developed and Hosted by <a target="_blank"
+                                title="NIC, External Link that opens in a new window"
+                                href="http://www.nic.in/"><strong>National Informatics Centre</strong></a><strong> ( NIC
+                                )</strong></span> </div>
+                    <div class="logo-cmf"> <a target="_blank" href="http://cmf.gov.in/"
+                            title="External link that opens in new tab"><img alt="cmf logo"
+                                src="assets/images/cmf-logo.png"></a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/.footer-wrapper-->
+    <!-- jQuery v1.11.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+        integrity="sha512-nhY06wKras39lb9lRO76J4397CH1XpRSLfLJSftTeo3+q2vP7PaebILH9TqH+GRpnOhfAGjuYMVmVTOZJ+682w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery Migration v1.4.1 -->
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <!-- jQuery v3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery Migration v3.4.0 -->
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+
+    <script src="assets/js/jquery-accessibleMegaMenu.js"></script>
+    <script src="assets/js/framework.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/font-size.js"></script>
+    <script src="assets/js/swithcer.js"></script>
+    <script src="theme/js/ma5gallery.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="theme/js/easyResponsiveTabs.js"></script>
+    <script src="theme/js/custom.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Application Installation and Configuration on Linux Servers</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+            .navbar .btn-primary {
+                font-size: 0.9rem; /* Adjust the font size */
+                padding: 5px 15px; /* Customize padding */
+                background-color: #007bff; /* Override primary color if needed */
+                border: none; /* Remove border */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Fixed Logo -->
+        <div class="fixed-logo" id="fixedLogo">
+            <button class="close-btn" id="closeBtn">×</button>
+            <img src="assets/img/AWSLogo.png" alt="AWS Reseller Partner Logo">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('closeBtn').addEventListener('click', function () {
+                    document.getElementById('fixedLogo').style.display = 'none';
+                });
+            });
+        </script>
+
+        <!-- ======= Header ======= -->
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                        <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                        </h1>
+                        <nav id="navbar" class="navbar">
+                            <ul>
+                                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                                <li class="dropdown"><a href="about.html"><span>About Us</span> <i
+                                            class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="about.html">Who We Are</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="culture.html">Our Culture</a></li>
+                                        <!--                                        <li><a href="careers.html">Careers</a></li>-->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="it_infra_project_support.html">IT Infra Project Support</a></li>
+                                        <li><a href="it_infra_operation_support.html">IT Infra Operation Support</a></li>
+                                        <li><a href="aws_billingsupport.html">AWS Billing Support</a></li>
+                                    </ul>
+                                </li> 
+
+                                <!--                            <li class="dropdown"><a href="#"><span>Solutions</span> <i
+                                                                        class="bi bi-chevron-down"></i></a>
+                                                                <ul>
+                                                                    <li><a href="opensource.html">Opensource</a></li>
+                                                                </ul>
+                                                            </li>-->
+                                <!--                                <li class="dropdown"><a href="#"><span>Resources</span> <i
+                                                                            class="bi bi-chevron-down"></i></a>
+                                                                    <ul>
+                                                                        <li><a href="case-study.html">Case Study</a></li>
+                                                                        <li><a href="blog.html">Blog</a></li>
+                                                                    </ul>
+                                                                </li>-->
+                                <li><a class="nav-link" href="./assets/pdf/profile.pdf">Profile</a></li>
+                                <li><a class="nav-link scrollto" href="contact.html">Contact &nbsp;</a></li>
+                                <li>
+                                    <a class="nav-link scrollto btn btn-primary text-white btn-sm rounded-pill " href="https://support.informatrixit.com/login.php">Raise a Ticket</a>
+                                </li>
+                            </ul>
+                            <i class="bi bi-list mobile-nav-toggle"></i>
+                        </nav><!-- .navbar -->
+                    </div>
+                </div>
+
+            </div>
+        </header><!-- End Header -->
+
+
+
+        <!-- ======= hero Section ======= -->
+        <section id="hero" class="innerhero">
+            <div class="hero-container">
+                <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+                    <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/informatrix-ship.jpg)">
+                            <div class="carousel-container">
+                                <div class="container">
+                                    <h2 class="animate__animated animate__fadeInDown">Application Installation and Configuration on Linux Servers</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero Section -->
+
+        <main id="main">
+
+
+
+            <!-- ======= Blog Single Section ======= -->
+            <section id="blog" class="blog">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="row">
+
+                        <div class="col-lg-8 entries">
+
+                            <article class="entry entry-single">
+
+                                <!--                                <div class="entry-img">
+                                                                    <img src="assets/img/b5.jpg" alt="" class="img-fluid">
+                                                                </div>-->
+
+                                <h2 class="entry-title">
+                                    Client Overview 
+                                </h2>
+                                <div class="entry-meta">
+                                    
+                                </div>
+
+                                <div class="entry-content">
+                                    <h4>Industry: Financial Services </h4>
+                                    <p>
+                                        <b>Objective:</b> Deploy and securely configure critical business applications on Linux servers to support high availability and compliance requirements. 
+                                    </p>
+                                    <p>
+                                        <b>Challenge:</b> Complex multi-tier application environment with legacy dependencies, strict security policies, and need for standardized configuration across multiple global Linux servers.  
+                                    </p>
+
+                                    <h4>Informatrix IT Team Role </h4>
+                                    <p>
+                                        <b>Function:</b> Informatrix IT Solution Private Limited, specializing in Linux infrastructure management, secure application deployment, and configuration automation. 
+                                         </p>
+                                         <p> <b> Goal:</b> Assist the client in deploying and configuring business-critical applications on Linux servers with standardized, secure, and compliant configurations to support seamless operations and regulatory adherence. </p>
+                                   
+                                         
+                                    <h4>Project Approach and Key Actions </h4>
+                                    <p><strong>1. Requirement Gathering and Environment Analysis </strong></p>
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                               Collaborated with the client’s application owners and system administrators to gather detailed requirements, version dependencies, and configuration parameters. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                               Analyzed existing Linux server environments, including OS versions, installed packages, and network setups to identify compatibility and security gaps.   
+                                            </p>
+                                            
+                                        </li>
+                                    </ul>
+                                    
+                                    <p><strong>2. Automation and Standardization of Installation</strong></p>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                               Developed automated shell scripts and Ansible playbooks for consistent application installation across all Linux servers.  
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                              Integrated configuration management to enforce uniform settings for application parameters, environment variables, and service startup options.   
+                                            </p>
+                                            
+                                        </li>
+                                       
+                                    </ul>
+                                    
+                                    <p><strong>3.Security Hardening and Configuration </strong></p>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                               Applied Linux security best practices such as disabling unused services, configuring SELinux/AppArmor policies, and setting proper file permissions for application directories and binaries. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                              Ensured all application configurations met client’s internal security standards and regulatory compliance (e.g., PCI-DSS, SOX). 
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                    </ul>
+                                    
+                                    <p><strong>4. Testing and Validation </strong></p>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                               Conducted staged deployments in development and QA environments to validate application functionality and performance under controlled conditions.   
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                              Performed security scans and vulnerability assessments on Linux servers and application components before production rollout.   
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                    
+                                    <p><strong>5. Deployment and Monitoring Setup</strong></p>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                               Coordinated with the client’s operations team for seamless deployment to production Linux servers during scheduled maintenance windows. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                              Configured centralized logging and monitoring tools (e.g., Nagios, Prometheus) to track application health and server performance in real-time.   
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                    </ul>
+                                    
+                                    <p><strong>6. Documentation and Training </strong></p>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                              Delivered detailed documentation on installation procedures, configuration standards, rollback processes, and troubleshooting guides. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                              Provided knowledge transfer sessions to client IT staff for ongoing application support and maintenance.  
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                    </ul>
+                                    
+                                     
+                                    
+                                    <h4><strong>Results and Outcomes  </strong></h4>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                                <b>Consistent and Reliable Application Deployments: </b>Automated installation reduced deployment errors by 90%, ensuring consistent configuration across all Linux servers. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Enhanced Security Posture: </b>Implemented security hardening reduced exposure to vulnerabilities and ensured compliance with internal and regulatory security policies.   
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Reduced Downtime: </b>Thorough testing and validation minimized production incidents and improved overall application availability.
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Improved Operational Efficiency: </b> Standardized deployment processes and comprehensive documentation accelerated onboarding of new servers and reduced support escalations. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Proactive Monitoring: </b>Real-time monitoring enabled early detection of application issues, reducing mean time to resolution (MTTR) by 40%.  
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                    </ul>
+                                    
+                                    <h4><strong>Key Takeaways </strong></h4>
+                                    
+                                    <!--                                    <img src="assets/img/b5-2.jpg" alt="" class="img-fluid mt-2 mb-3">-->
+
+                                    <ul>
+                                        <li>
+
+                                            <p>
+                                                <b>Automation is Critical: </b>  Standardizing application installation and configuration through automation ensures repeatability and reduces human errors in complex Linux environments. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Security Must Be Embedded Early: </b>Incorporating security hardening and compliance checks into the deployment lifecycle is essential for protecting sensitive financial data and meeting regulatory mandates. 
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Collaboration Across Teams: </b>Close engagement with application owners, system admins, and security teams enables smooth deployments and aligned security practices.  
+                                            </p>
+                                            
+                                        </li>
+                                        <li>
+
+                                            <p>
+                                                <b>Continuous Validation: </b>Testing in non-production environments and ongoing monitoring post-deployment help maintain system stability and security over time. 
+                                            </p>
+                                            
+                                        </li>
+                                        
+                                         
+                                    </ul>
+
+                                </div>
+
+
+
+                            </article><!-- End blog entry -->
+
+
+
+                        </div><!-- End blog entries list -->
+
+
+                        <!-- Recent Post -->
+                        <div class="col-lg-4" id="recentpost">
+                        </div><!-- End blog sidebar -->
+
+
+
+                        <!--                        <h3 class="sidebar-title">Tags</h3>
+                                                <div class="sidebar-item tags">
+                                                    <ul>
+                                                        <li><a href="#">Salesforce</a></li>
+                                                        <li><a href="#">Transport</a></li>
+                                                        <li><a href="#">Logistics</a></li>
+                                                        <li><a href="#">Shipping</a></li>
+                                                        <li><a href="#">Salesforce implementation</a></li>
+                                                        <li><a href="#">Salesforce integration</a></li>
+                                                        <li><a href="#">Salesforce clouds</a></li>
+                                                        <li><a href="#">Sales cloud</a></li>
+                                                        <li><a href="#">Service Cloud</a></li>
+                                                        <li><a href="#">Salesforce CRM</a></li>
+                                                    </ul>
+                                                </div> End sidebar tags-->
+
+                    </div><!-- End sidebar -->
+
+                </div><!-- End blog sidebar -->
+
+
+                </div>
+
+                </div>
+            </section><!-- End Blog Single Section -->
+
+
+
+        </main><!-- End #main -->
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer"> </footer>
+        <!-- End Footer -->
+
+
+
+        <!--        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>-->
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+
+        <!-- footer js -->
+        <script src="./assets/js/footer.js"></script>
+        <!-- Recent Post -->
+        <script src="./assets/js/recentpost.js"></script>
+
+    </body>
+
+</html>
