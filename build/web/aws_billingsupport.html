@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>AWS Billing Support</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+            .navbar .btn-primary {
+                font-size: 0.9rem; /* Adjust the font size */
+                padding: 5px 15px; /* Customize padding */
+                background-color: #007bff; /* Override primary color if needed */
+                border: none; /* Remove border */
+            }
+
+            .hero-section {
+                background: url("./assets/img/AWSBG.png") no-repeat center center;
+                background-size: cover;
+                height: 100vh;
+                color: white;
+                display: flex;
+                align-items: center;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            }
+            .hero-content {
+                max-width: 650px;
+            }
+            .btn-outline-light {
+                border-width: 2px;
+            }
+
+            .custom-card {
+                background-color: rgba(
+                    60,
+                    60,
+                    60,
+                    0.9
+                    ); /* Semi-transparent dark background */
+                color: white;
+                border-radius: 15px;
+                padding: 2rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .custom-card:hover {
+                transform: scale(1.02);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+                background-color: rgba(60, 60, 60, 0.95);
+            }
+            .custom-image {
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .custom-cardnew {
+                background-color: #ffffff;
+                border-radius: 16px;
+                transition: 0.3s ease;
+                box-shadow: 0 0 0 transparent;
+                position: relative;
+            }
+
+            .custom-cardnew:hover {
+                box-shadow: 0 0 25px 5px rgba(144, 64, 255, 0.3),
+                    0 0 25px 10px rgba(0, 196, 255, 0.2);
+                cursor: pointer;
+            }
+
+            .testimonial-section {
+                background: linear-gradient(135deg, #3f51b5, #2196f3);
+                border-radius: 12px;
+                margin: 2rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Fixed Logo -->
+        <div class="fixed-logo" id="fixedLogo">
+            <button class="close-btn" id="closeBtn">×</button>
+            <img src="assets/img/AWSLogo.png" alt="AWS Reseller Partner Logo">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('closeBtn').addEventListener('click', function () {
+                    document.getElementById('fixedLogo').style.display = 'none';
+                });
+            });
+        </script>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                        <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                        </h1>
+                        <nav id="navbar" class="navbar">
+                            <ul>
+                                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                                <li class="dropdown"><a href="about.html"><span>About Us</span> <i
+                                            class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="about.html">Who We Are</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="culture.html">Our Culture</a></li>
+                                        <!--                                        <li><a href="careers.html">Careers</a></li>-->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="it_infra_project_support.html">IT Infra Project Support</a></li>
+                                        <li><a href="it_infra_operation_support.html">IT Infra Operation Support</a></li>
+                                        <li><a href="aws_billingsupport.html">AWS Billing Support</a></li>
+                                    </ul>
+                                </li> 
+
+                                <!--                            <li class="dropdown"><a href="#"><span>Solutions</span> <i
+                                                                        class="bi bi-chevron-down"></i></a>
+                                                                <ul>
+                                                                    <li><a href="opensource.html">Opensource</a></li>
+                                                                </ul>
+                                                            </li>-->
+                                <!--                                <li class="dropdown"><a href="#"><span>Resources</span> <i
+                                                                            class="bi bi-chevron-down"></i></a>
+                                                                    <ul>
+                                                                        <li><a href="case-study.html">Case Study</a></li>
+                                                                        <li><a href="blog.html">Blog</a></li>
+                                                                    </ul>
+                                                                </li>-->
+                                <li><a class="nav-link" href="./assets/pdf/profile.pdf">Profile</a></li>
+                                <li><a class="nav-link scrollto" href="contact.html">Contact &nbsp;</a></li>
+                                <li>
+                                    <a class="nav-link scrollto btn btn-primary text-white btn-sm rounded-pill " href="https://support.informatrixit.com/login.php">Raise a Ticket</a>
+                                </li>
+                            </ul>
+                            <i class="bi bi-list mobile-nav-toggle"></i>
+                        </nav><!-- .navbar -->
+                    </div>
+                </div>
+
+            </div>
+        </header><!-- End Header -->
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold">Save as You Scale with Informatrix</h1>
+                    <p class="lead mb-4">
+                        Cloud services optimized for performance - and priced for growth.
+                        Cut waste, not capability.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a
+                            class="btn btn-primary btn-lg rounded-pill shadow-sm"
+                            href="#contact"
+                            >
+                            Request a Free Cost Review
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: The Cloud Cost Challenge -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="custom-card">
+                            <div class="row align-items-center">
+                                <!-- Image column -->
+                                <div class="col-md-5 mb-4 mb-md-0">
+                                    <img
+                                        src="./assets/img/aws.png"
+                                        alt="About Image"
+                                        class="custom-image"
+                                        />
+                                    <!-- Replace "your-image.png" with actual path or use uploaded file name -->
+                                </div>
+                                <!-- Content column -->
+                                <div class="col-md-7 text-white">
+                                    <h2 class="mb-3">The Cloud Cost Challenge</h2>
+                                    <h5 class="text-light mb-3">
+                                        Cloud spending shouldn't grow faster than your business.
+                                    </h5>
+                                    <p class="fs-5 text-light">
+                                        Many organizations overspend on cloud infrastructure due to
+                                        underutilized resources, poor planning, or lack of
+                                        visibility. At <strong>Informatrix</strong>, we help you
+                                        align your cloud architecture with your business needs - so
+                                        you're never paying for more than what you use.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Content Section -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">
+                        Smarter Cloud Management. Leaner Billing. Scalable Results.
+                    </h2>
+
+                    <!-- Bullet Points -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            <strong>Cloud Cost Audits</strong> - Identify waste and
+                            inefficiencies.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            <strong>Billing Optimization</strong> - Right-size your cloud
+                            services.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            <strong>Scalable Architectures</strong> - Grow efficiently as
+                            demand rises.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            <strong>Ongoing Monitoring</strong> - Proactive cost control, not
+                            just one-time fixes.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            <strong>Cloud-Native Best Practices</strong> - Built for scale,
+                            optimized for savings.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Section -->
+                <div class="col-md-6 text-center">
+                    <img
+                        src="./assets/img/awsbanner.png"
+                        alt="Team Working"
+                        class="img-fluid rounded shadow"
+                        />
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <!-- Section 2: We Make Your Cloud Work for Your Budget -->
+
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Right Image Section -->
+                <div class="col-md-6 text-center">
+                    <img
+                        src="./assets/img/aws2.png"
+                        alt="Team Working"
+                        class="img-fluid rounded shadow"
+                        />
+                </div>
+                <!-- Left Content Section -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">
+                        We don’t just manage your cloud - we make it work for your budget.
+                    </h2>
+
+                    <!-- Bullet Points -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            Certified cloud experts with deep AWS and DevOps experience.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            Proven cost reductions across fintech, SaaS, and enterprise
+                            clients.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            Transparent reporting and ongoing optimization support.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-cloud-check me-2 text-primary"></i>
+                            Partnership-driven approach - your success is our metric.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Highlighted Testimonial Section -->
+        <section
+            class="py-5 testimonial-section text-center text-white mx-auto"
+            style="max-width: 1200px"
+            >
+            <div class="container">
+                <blockquote class="blockquote mb-4">
+                    <p class="mb-0 fs-4 fst-italic">
+                        “With Informatrix, we saved 30% monthly cloud bills without
+                        compromising uptime.”
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-white">
+                    Happy Client, CTO of a Fintech Startup
+                </figcaption>
+            </div>
+        </section>
+
+        <!-- Section 4: Partner With Us -->
+        <section class="py-5" style="background-color: #e8f9ff">
+            <div class="container">
+                <div class="custom-cardnew p-4 h-100">
+                    <h2 class="fw-bold mb-3 text-center">
+                        Let’s Build a Smarter Cloud Together
+                    </h2>
+                    <p class="lead mx-auto mb-4">
+                        Whether you're a startup scaling fast, or an enterprise tightening
+                        budgets, we help you take control of your cloud spend. Our flexible
+                        partnership models are designed to support your growth
+                        <span>efficiently, intelligently, and affordably.</span>
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a
+                            href="#contact"
+                            class="btn btn-primary btn-lg rounded-pill shadow-sm"
+                            >
+                            Book a Free Consultation</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Background Image -->
+        <section
+            class="py-5 position-relative text-white"
+            id="contact"
+            style="background: url('./assets/img/contactaws.png') no-repeat center center/cover"
+            >
+            <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100"
+                style="background: rgba(0, 0, 0, 0.6); z-index: 1"
+                ></div>
+
+            <div class="container position-relative" style="z-index: 2">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-white">Ready to Save While You Scale?</h2>
+                </div>
+
+                <div class="row justify-content-center text-black">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="bg-white bg-opacity-75 rounded-4 shadow-lg p-4">
+                            <form method="post" action="awsserviceemail" onsubmit="return validateForm()">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input
+                                        type="text"
+                                        name="fullname"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Your Name"
+                                        required
+                                        />
+                                </div>
+
+                                
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="name@example.com"
+                                        required
+                                        />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="mobile" class="form-label">Mobile Number</label>
+                                    <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="mobile"
+                                        name="mobile"
+                                        placeholder="Enter your mobile number"
+                                        required
+                                        />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea
+                                        class="form-control"
+                                        name="message"
+                                        id="message"
+                                        rows="4"
+                                        placeholder="Tell us more..."
+                                        required
+                                        ></textarea>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-lg rounded-pill"
+                                        >
+                                        Let's Talk Savings
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer"> </footer>
+        <!-- End Footer -->
+
+
+
+        <!--        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>-->
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+
+        <!-- footer js -->
+        <script src="./assets/js/footer.js"></script>
+        <!-- Recent Post -->
+        <script src="./assets/js/recentpost.js"></script>
+
+        <script>
+                                function validateForm() {
+                                    const name = document.getElementById("name").value.trim();
+                                    const mobile = document.getElementById("mobile").value.trim();
+                                    const email = document.getElementById("email").value.trim();
+                                    const message = document.getElementById("message").value.trim();
+
+                                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    const mobileRegex = /^[0-9]{10}$/; // Accepts exactly 10 digits
+
+                                    if (name.length < 2) {
+                                        alert("Please enter a valid name.");
+                                        return false;
+                                    }
+
+                                    if (!mobileRegex.test(mobile)) {
+                                        alert("Please enter a valid 10-digit mobile number.");
+                                        return false;
+                                    }
+
+                                    if (!emailRegex.test(email)) {
+                                        alert("Please enter a valid email address.");
+                                        return false;
+                                    }
+
+                                    if (message.length < 10) {
+                                        alert("Message should be at least 10 characters.");
+                                        return false;
+                                    }
+
+                                    return true; // Allow form submission
+                                }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Contact Informatrix IT</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <style>
+            .navbar .btn-primary {
+                font-size: 0.9rem; /* Adjust the font size */
+                padding: 5px 15px; /* Customize padding */
+                background-color: #007bff; /* Override primary color if needed */
+                border: none; /* Remove border */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Fixed Logo -->
+        <div class="fixed-logo" id="fixedLogo">
+            <button class="close-btn" id="closeBtn">×</button>
+            <img src="assets/img/AWSLogo.png" alt="AWS Reseller Partner Logo">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('closeBtn').addEventListener('click', function () {
+                    document.getElementById('fixedLogo').style.display = 'none';
+                });
+            });
+        </script>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                        <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                        </h1>
+                        <nav id="navbar" class="navbar">
+                            <ul>
+                                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                                <li class="dropdown"><a href="about.html"><span>About Us</span> <i
+                                            class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="about.html">Who We Are</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="culture.html">Our Culture</a></li>
+                                        <!--                                        <li><a href="careers.html">Careers</a></li>-->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="it_infra_project_support.html">IT Infra Project Support</a></li>
+                                        <li><a href="it_infra_operation_support.html">IT Infra Operation Support</a></li>
+                                        <li><a href="aws_billingsupport.html">AWS Billing Support</a></li>
+                                    </ul>
+                                </li> 
+
+                                <!--                            <li class="dropdown"><a href="#"><span>Solutions</span> <i
+                                                                        class="bi bi-chevron-down"></i></a>
+                                                                <ul>
+                                                                    <li><a href="opensource.html">Opensource</a></li>
+                                                                </ul>
+                                                            </li>-->
+                                <!--                                <li class="dropdown"><a href="#"><span>Resources</span> <i
+                                                                            class="bi bi-chevron-down"></i></a>
+                                                                    <ul>
+                                                                        <li><a href="case-study.html">Case Study</a></li>
+                                                                        <li><a href="blog.html">Blog</a></li>
+                                                                    </ul>
+                                                                </li>-->
+                                <li><a class="nav-link" href="./assets/pdf/profile.pdf">Profile</a></li>
+                                <li><a class="nav-link scrollto" href="contact.html">Contact &nbsp;</a></li>
+                                <li>
+                                    <a class="nav-link scrollto btn btn-primary text-white btn-sm rounded-pill " href="https://support.informatrixit.com/login.php">Raise a Ticket</a>
+                                </li>
+                            </ul>
+                            <i class="bi bi-list mobile-nav-toggle"></i>
+                        </nav><!-- .navbar -->
+                    </div>
+                </div>
+
+            </div>
+        </header><!-- End Header -->
+
+
+
+        <!-- ======= hero Section ======= -->
+        <section id="hero" class="innerhero">
+            <div class="hero-container">
+                <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+                    <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+                            <div class="carousel-container">
+                                <div class="container">
+                                    <h2 class="animate__animated animate__fadeInDown">Contact Us</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero Section -->
+
+        <main id="main">
+
+            <!-- ======= Contact Section ======= -->
+            <!--            <section id="contact">
+                            <div class="container" data-aos="fade-up">
+            
+                                <div class="section-header">
+                                    <h3>Contact Us</h3>
+                                    <h2>Let's Get In Touch</h2>
+                                    <p>Our Businesses offers services and solutions to address Life Cycle requirement of Information Technology.
+                                    </p>
+                                </div>
+            
+                                <div class="row contact-info">
+            
+                                    <div class="col-md-4">
+                                        <div class="contact-address">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <h3>Address</h3>
+                                            <address>54, Central Bajar Road, Bajaj Nagar, Nagpur, Maharashtra 440010</address>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-md-4">
+                                         <div class="contact-phone">
+                                          <i class="bi bi-phone"></i>
+                                          <h3>Phone Number</h3>
+                                          <p><a href="tel:+91 7387874545">+91 7387874545</a></p>
+                                        </div> 
+                                    </div>
+            
+                                    <div class="col-md-4">
+                                        <div class="contact-email">
+                                            <i class="bi bi-envelope"></i>
+                                            <h3>Email</h3>
+                                            <p><a href="mailto:support@informatrixit.com">support@informatrixit.com</a></p>
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+                                                                        <div class="form">
+                                                                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                                                                <div class="row">
+                                                                                    <div class="form-group col-md-6">
+                                                                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name" required>
+                                                                                    </div>
+                                                                                    <div class="form-group col-md-6">
+                                                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Mobile" required>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <textarea class="form-control" name="message" rows="5" placeholder="Details" required></textarea>
+                                                                                </div>
+                                                                                <div class="my-3">
+                                                                                    <div class="loading">Loading</div>
+                                                                                    <div class="error-message"></div>
+                                                                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                                                </div>
+                                                                                <div class="text-center"><button type="submit">Send Message</button></div>
+                                                                            </form>
+                                                                        </div> 
+            
+                            </div>
+                        </section> End Contact Section -->
+
+
+            <!-- ======= Testimonials Section ======= -->
+            <section id="testimonials" class="section-bg">
+                <div data-aos="fade-up">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- ======= Contact Section ======= -->
+                            <section id="contact" style="margin-left: 30px;">
+                                <div class="container" data-aos="fade-up">
+
+                                    <div class="section-header">
+                                        <!--                                        <h2>Contact Us</h2>-->
+                                        <h2>Let's Get In Touch</h2>
+                                        <p>Informatrix IT – Your Trusted AWS Reseller Partner and Cloud Support Specialist, offering expert consulting, exclusive AWS discounts, and 24/7 IT support through our dedicated ticketing system.
+                                        </p>
+                                    </div>
+
+                                    <div class="row contact-info">
+
+                                        <div class="col-md-4">
+                                            <div class="contact-address">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <h3>Address</h3>
+                                                <address>54, Central Bajar Road, Bajaj Nagar, Nagpur, Maharashtra 440010</address>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="contact-phone">
+                                                <i class="bi bi-phone"></i>
+                                                <h3>Phone Number</h3>
+                                                <p><a href="tel:+918999675881">+91 8999675881</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="contact-email">
+                                                <i class="bi bi-envelope"></i>
+                                                <h3>Email</h3>
+                                                <p><a href="mailto:support@informatrixit.com">support@informatrixit.com</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </section><!-- End Contact Section -->
+                        </div>
+                        <div class="col-lg-6" > 
+                            <header class="section-header">
+                                <!--                                <h2 style="margin-left: 5%; margin-top: 3%;" class="text-left">Our Expertise</h2>-->
+                            </header>
+
+                            <div class="testimonial_bg">
+
+
+                                <!--                                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">-->
+
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <!--                                                <img src=" sendemail   assets/img/quote2.jpg" class="testimonial-img mb-3" alt="">-->
+                                        <div class="form" >
+                                            <form style="margin-right: 10%;" method="post" action="sendmail" onsubmit="return validateForm()">
+                                                <div class="row mb-4">
+                                                    <div class="col">
+                                                        <div class="form-outline">
+                                                            <input type="text" id="form6Example1" class="form-control" name="firstname" required />
+                                                            <label class="form-label" style="color: black" for="form6Example1">First Name</label>
+                                                            <small id="firstNameError" class="text-danger"></small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-outline">
+                                                            <input type="text" id="form6Example2" class="form-control" name="lastname" required />
+                                                            <label class="form-label" style="color: black" for="form6Example2">Last Name</label>
+                                                            <small id="lastNameError" class="text-danger"></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-4">
+                                                    <div class="col">
+                                                        <div class="form-outline">
+                                                            <input type="email" id="form6Example3" class="form-control" name="email" required />
+                                                            <label class="form-label" style="color: black" for="form6Example3">Email</label>
+                                                            <small id="emailError" class="text-danger"></small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-outline">
+                                                            <input type="number" id="form6Example6" class="form-control" name="phone" pattern="[7-9]{1}[0-9]{9}" required />
+                                                            <label style="color: black" class="form-label" for="form6Example6">Phone</label>
+                                                            <small id="phoneError" class="text-danger"></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <textarea class="form-control" id="form6Example7" rows="4" name="message" placeholder="Please specify your requirements or the assistance you need." required></textarea>
+                                                    <label class="form-label" style="color: black" for="form6Example7">Message</label>
+                                                    <small id="messageError" class="text-danger"></small>
+                                                </div>
+
+                                                <!--                                                 Google reCAPTCHA widget -->
+                                                <div class="g-recaptcha" data-sitekey="6Lfbnj0UAAAAAH45w9o_-BZncewBb7qQ8Pw-iTxv"></div>
+                                                <small id="captchaError" class="text-danger"></small>
+                                                <script src='https://www.google.com/recaptcha/api.js'></script><br>
+
+
+                                                <button type="submit" class="btn btn-primary btn-block mb-4">SUBMIT</button>
+                                            </form>
+                                        </div>
+                                        <!-- <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt=""> -->
+                                        <!--                                                <h3>Oomkar Kulkarnie</h3>
+                                                                                        <h4>Head - Product & Technologies | 1Pay</h4>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div></div></section></main>
+
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer"> </footer>
+        <!-- End Footer -->
+
+
+
+        <!--        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>-->
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+        <!-- JavaScript to Validate Form -->
+        <script>
+                                                function validateForm() {
+                                                    let isValid = true;
+
+                                                    // Clear previous errors
+                                                    document.getElementById("firstNameError").innerText = "";
+                                                    document.getElementById("lastNameError").innerText = "";
+                                                    document.getElementById("emailError").innerText = "";
+                                                    document.getElementById("phoneError").innerText = "";
+                                                    document.getElementById("messageError").innerText = "";
+
+                                                    // First Name validation
+                                                    const firstName = document.getElementById("form6Example1").value;
+                                                    if (firstName.trim() === "") {
+                                                        document.getElementById("firstNameError").innerText = "First Name is required.";
+                                                        isValid = false;
+                                                    }
+
+                                                    // Last Name validation
+                                                    const lastName = document.getElementById("form6Example2").value;
+                                                    if (lastName.trim() === "") {
+                                                        document.getElementById("lastNameError").innerText = "Last Name is required.";
+                                                        isValid = false;
+                                                    }
+
+                                                    // Email validation
+                                                    const email = document.getElementById("form6Example3").value;
+                                                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                                    if (!emailPattern.test(email)) {
+                                                        document.getElementById("emailError").innerText = "Please enter a valid email address.";
+                                                        isValid = false;
+                                                    }
+
+                                                    // Phone validation
+                                                    const phone = document.getElementById("form6Example6").value;
+                                                    const phonePattern = /^[7-9][0-9]{9}$/;
+                                                    if (!phonePattern.test(phone)) {
+                                                        document.getElementById("phoneError").innerText = "Please enter a valid 10-digit phone number .";//starting with 7, 8, or 9
+                                                        isValid = false;
+                                                    }
+
+                                                    // Message validation
+                                                    const message = document.getElementById("form6Example7").value;
+                                                    if (message.trim() === "") {
+                                                        document.getElementById("messageError").innerText = "Message is required.";
+                                                        isValid = false;
+                                                    }
+
+                                                    // reCAPTCHA validation
+                                                    const captchaResponse = grecaptcha.getResponse();
+                                                    if (captchaResponse.length === 0) {
+                                                        document.getElementById("captchaError").innerText = "Please verify that you are not a robot.";
+                                                        isValid = false;
+                                                    }
+
+                                                    return isValid;
+                                                }
+        </script>
+
+
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- footer js -->
+        <script src="./assets/js/footer.js"></script>
+
+        <script type="text/javascript">
+                                                function sendEmail() {
+                                                    Email.send({
+                                                        Host: "smtp.gmail.com",
+                                                        Username: "sender@email_address.com",
+                                                        Password: "Enter your password",
+                                                        To: 'receiver@email_address.com',
+                                                        From: "sender@email_address.com",
+                                                        Subject: "Sending Email using javascript",
+                                                        Body: "Well that was easy!!",
+                                                    })
+                                                            .then(function (message) {
+                                                                alert("mail sent successfully")
+                                                            });
+                                                }
+        </script>
+
+    </body>
+
+</html>

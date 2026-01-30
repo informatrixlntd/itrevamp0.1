@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>IT Infra Project Support</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Favicons -->
+        <link rel="icon" href="assets/img/favicon.png">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/new-style.css">
+
+        <!-- Template Main CSS File -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Custom CSS for Logo Size, Hover Effect, Animation, and Responsive Images -->
+        <style>
+            /* Style for the download button */
+            .download-btn {
+                display: inline-block; /* Allow it to size based on content */
+                /* Button text color */
+                padding: 10px 20px; /* Padding for medium size */
+                border-radius: 5px; /* Rounded corners */
+                text-decoration: none; /* Remove underline */
+                font-size: 16px; /* Medium font size */
+                font-weight: 600; /* Bold text */
+                transition: background-color 0.3s ease; /* Smooth transition */
+                text-align: center; /* Center the text inside the button */
+            }
+
+            /* Button hover effect */
+            .download-btn:hover {
+               
+                color: white !important;
+            }
+
+
+
+            .logo-small {
+                width: 85px;
+                height: auto;
+            }
+
+            /* Animation for the first image */
+            .first-image {
+                animation: fadeIn 2s ease-in-out;
+            }
+
+            .image-gallery img {
+                transform: scale(0.9); /* Reduce size to 90% */
+                transition: transform 0.3s; /* Keep the hover effect transition */
+            }
+            .image-gallery img:hover {
+                transform: scale(0.95); /* Slight zoom on hover */
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* Hover effect for images */
+            img {
+                transition: transform 0.3s;
+            }
+
+            img:hover {
+                transform: scale(1.05);
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .image-gallery img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+
+                /* Fix for the first image to prevent overlap with the navbar */
+                .first-image {
+                    margin-top: 100px; /* Add margin to push the first image below the navbar */
+                }
+            }
+            
+        </style>
+        <style>
+            .navbar .btn-primary {
+                font-size: 0.9rem; /* Adjust the font size */
+                padding: 5px 15px; /* Customize padding */
+                background-color: #007bff; /* Override primary color if needed */
+                border: none; /* Remove border */
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Logo" class="img-fluid">
+                            </a>
+                        </h1>
+                        <nav id="navbar" class="navbar">
+                            <ul>
+                                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="about.html"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="about.html">Who We Are</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="culture.html">Our Culture</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="it_infra_project_support.html">IT Infra Project Support</a></li>
+                                        <li><a href="it_infra_operation_support.html">IT Infra Operation Support</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" href="profile.html">Profile</a></li>
+                                <li><a class="nav-link scrollto" href="contact.html">Contact &nbsp;</a></li>
+                                <li>
+                                    <a class="nav-link scrollto btn btn-primary btn-sm rounded-pill " href="https://support.informatrixit.com/login.php">Raise a Ticket</a>
+                                </li>
+                            </ul>
+                            <i class="bi bi-list mobile-nav-toggle"></i>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header><!-- End Header -->
+
+        <!-- ======= Image Gallery Section ======= -->
+        <section>
+            <div class="image-gallery">
+                <img src="assets/img/profile/1.jpg" alt="Profile Image 1" class="img-fluid rounded first-image">
+                <img src="assets/img/profile/2.jpg" alt="Profile Image 2" class="img-fluid rounded">
+                <img src="assets/img/profile/3.jpg" alt="Profile Image 3" class="img-fluid rounded">
+                <img src="assets/img/profile/4.jpg" alt="Profile Image 4" class="img-fluid rounded">
+                <img src="assets/img/profile/5.jpg" alt="Profile Image 5" class="img-fluid rounded">
+                <img src="assets/img/profile/6.jpg" alt="Profile Image 6" class="img-fluid rounded">
+                <img src="assets/img/profile/7.jpg" alt="Profile Image 7" class="img-fluid rounded">
+                <img src="assets/img/profile/8.jpg" alt="Profile Image 8" class="img-fluid rounded">
+                <img src="assets/img/profile/9.jpg" alt="Profile Image 9" class="img-fluid rounded">
+                <img src="assets/img/profile/10.jpg" alt="Profile Image 10" class="img-fluid rounded">
+                <img src="assets/img/profile/11.jpg" alt="Profile Image 11" class="img-fluid rounded">
+                <img src="assets/img/profile/12.jpg" alt="Profile Image 12" class="img-fluid rounded">
+                <img src="assets/img/profile/13.jpg" alt="Profile Image 13" class="img-fluid rounded">
+
+
+            </div>
+            <!-- Centered Download Button -->
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="./assets/pdf/Informatrix IT Profile.pdf" download class="download-btn btn-primary">
+                    Download Profile
+                </a>
+            </div>
+
+
+        </section>
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer"></footer><!-- End Footer -->
+
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <!-- Back to Bottom Button -->
+        <!--        <a href="./assets/pdf/profile.pdf" class="back-to-bottom d-flex align-items-center justify-content-center" download>
+                    <i class="bi bi-arrow-down-short"></i>
+                </a>-->
+
+        <script>
+            // JavaScript to toggle visibility of the buttons
+            const backToTop = document.querySelector('.back-to-top');
+            const backToBottom = document.querySelector('.back-to-bottom');
+
+// Show 'back-to-top' when scrolled down
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+
+                // Show 'back-to-bottom' when not at the bottom of the page
+                if (window.innerHeight + window.scrollY < document.body.offsetHeight - 100) {
+                    backToBottom.classList.add('active');
+                } else {
+                    backToBottom.classList.remove('active');
+                }
+            });
+
+        </script>
+
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Footer JS -->
+        <script src="./assets/js/footer.js"></script>
+
+    </body>
+</html>
